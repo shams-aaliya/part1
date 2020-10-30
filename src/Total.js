@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Total = (props) => {
-  console.log(props)
+const Total = ({parts}) => {
+  console.log({parts})
   return (
     <div>
-      <p>And your total Exercises are {props.exercises}</p>
+      {parts.map(part => <p>Total number of exercises in the above examples are: {part.exercises}</p>)}
     </div>
   );
 };

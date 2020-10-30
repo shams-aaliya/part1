@@ -1,10 +1,9 @@
 import React from 'react';
 
-const Content = (props) => {
-  console.log(props)
+const Content = ({ parts }) => {
   return (
     <div>
-      <p>This is {props.part_name}.</p>
+      { parts.map(part => <p>{part.name}</p>) }
     </div>
   );
 };

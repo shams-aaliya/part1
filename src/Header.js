@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Header = (props) => {
-  console.log(props)
+const Header = ({ name, course }) => {
+  console.log(course)
   return (
     <div>
       <p>
-        Hello {props.name}, your course is {props.course} !
+        Hello {name}, your course is {course.n}... !
       </p>
     </div>
   );
